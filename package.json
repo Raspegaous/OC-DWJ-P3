@@ -1,0 +1,22 @@
+{
+  "name": "p03_bonnet_jeremy",
+  "version": "1.0.0",
+  "description": "Formation DWJ - P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/raspegaous.git"
+  },
+  "author": "Jeremy Bonnet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github.com/raspegaous/issues"
+  },
+  "homepage": "https://github.com/github.com/raspegaous#readme",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
+}
