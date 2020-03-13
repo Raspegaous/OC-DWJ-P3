@@ -1,0 +1,63 @@
+@import "reset";
+@import "variables";
+@import "nav";
+@import "footer";
+
+/*
+  Global
+*/
+body {
+  font-size: 18px;
+  background-color: #F7F9F9;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+  Main
+*/
+.main {
+  position: relative;
+  margin: 1em auto;
+  max-width: 80vw;
+  .menu {
+    max-width: 100%;
+    margin: 2em 0;
+    box-shadow: 4px 4px 4px 4px #b8b8b8;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    .img-menu {
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      transition: all 0.4s;
+      &:hover {
+        width: 100%;
+        opacity: 0.4;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+      }
+    }
+
+  }
+}
+
+.btn {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  margin: 6em auto;
+  background-color: $nav-color;
+  color: $color;
+  padding: 1em;
+  border-radius: 24px;
+}
+
+

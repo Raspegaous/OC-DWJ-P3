@@ -15,7 +15,7 @@
 * __Mentions légales__ => nouvelle page
 * __Contactez-nous__ => `href="mailto:"`
 * Header (logo) et footer (mention légales et contact) sur toutes les pages
-* footer toujours visible (position: fixe;)
+* footer toujours visible (position: fixed;)
 * Chaque item de type menu => animation zoom + effet fondu (réduction opacity) sans faire grossir le cadre initale
 * __prochainement__ => **...** animés progressivement.
 * btn __contact__ et __mentions légales__ => effect secoué (wiggle)
