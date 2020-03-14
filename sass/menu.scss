@@ -1,0 +1,35 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "nav";
+@import "footer";
+@import "keyframes";
+
+/*
+  Menu
+*/
+.section {
+  position: relative;
+  margin: 0 auto 8rem auto;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .title {
+    font-size: 1.5em;
+    text-wrap: none;
+    margin: 2em;
+  }
+  .img {
+    width: 100%;
+  }
+}
+
+/*
+  Legal
+*/
+.text-legal {
+  text-align: justify;
+}

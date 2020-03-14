@@ -1,16 +1,16 @@
 @import "reset";
 @import "variables";
 @import "mixins";
+@import "keyframes";
 @import "global";
 @import "nav";
 @import "footer";
-@import "keyframes";
+@import "spinner";
 
 /*
   Main
 */
 .main {
-  position: relative;
   margin: 1em auto;
   max-width: 80vw;
   display: flex;
@@ -20,8 +20,8 @@
   .menu {
     max-width: 600px;
     margin: 2em auto;
-    box-shadow: 4px 4px 4px 4px #b8b8b8;
-    transition: all 0.4s ease;
+    @include shadow(4px, #b8b8b8);
+    @include transition(all, 0.4s);
     overflow: hidden;
     &--img {
       width: 100%;
@@ -57,34 +57,5 @@
       display: block;
     }
 
-  }
-}
-
-.spinner {
-  display: none;
-  width: 100%;
-  text-align: center;
-  & > span {
-    width: 18px;
-    height: 18px;
-    background-color: $nav-color;
-    border-radius: 50%;
-    display: inline-block;
-    -webkit-animation: spinner 1.4s infinite ease-in-out both;
-    -moz-animation: spinner 1.4s infinite ease-in-out both;
-    -o-animation: spinner 1.4s infinite ease-in-out both;
-    animation: spinner 1.4s infinite ease-in-out both;
-  }
-  span:last-child {
-    -webkit-animation-delay: 0.32s;
-    -moz-animation-delay: 0.32s;
-    -o-animation-delay: 0.32s;
-    animation-delay: 0.32s;
-  }
-  span:nth-child(2n) {
-    -webkit-animation-delay: 0.16s;
-    -moz-animation-delay: 0.16s;
-    -o-animation-delay: 0.16s;
-    animation-delay: 0.16s;
   }
 }

@@ -12,6 +12,24 @@
   -o-transition: $type $time;
   transition: $type $time;
 }
+@mixin animation ($animation, $time, $duration, $type) {
+  -webkit-animation: $animation $time $duration $type;
+  -moz-animation: $animation $time $duration $type;
+  -o-animation: $animation $time $duration $type;
+  animation: $animation $time $duration $type;
+}
+@mixin animation-delay ($time) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  -o-animation-delay: $time;
+  animation-delay: $time;
+}
+@mixin shadow ($size, $color) {
+  box-shadow: $size $size $size $size $color;
+  -webkit-box-shadow: $size $size $size $size $color;
+  -moz-box-shadow: $size $size $size $size $color;
+  -o-box-shadow: $size $size $size $size $color;
+}
 
 @mixin keyframes ($name) {
   @keyframes #{$name} { @content; }
