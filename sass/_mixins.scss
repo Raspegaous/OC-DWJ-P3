@@ -1,0 +1,16 @@
+@mixin compatibility ($selector, $property, $value) {
+  -wekbit-#{$selector}: #{$property}(#{$value});
+  -moz-#{$selector}: #{$property}(#{$value});
+  -ms-#{$selector}: #{$property}(#{$value});
+  -o-#{$selector}: #{$property}(#{$value});
+  #{$selector}: #{$property}(#{$value});
+}
+
+@mixin keyframes ($name) {
+  @keyframes #{$name} { @content; }
+  @-moz-keyframes #{$name} { @content; }
+  @-webkit-keyframes #{$name} { @content; }
+  @-o-keyframes #{$name} { @content; }
+  @-ms-keyframes #{$name} { @content; }
+  @-khtml-keyframes #{$name} { @content; }
+}

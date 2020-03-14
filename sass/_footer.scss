@@ -16,5 +16,8 @@
     margin: 0 1rem;
     color: $color;
     font-weight: bold;
+    &:hover {
+      animation: wiggle 0.4s 2 ease-in-out;
+    }
   }
 }

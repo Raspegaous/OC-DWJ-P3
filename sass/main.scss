@@ -1,18 +1,10 @@
 @import "reset";
 @import "variables";
+@import "mixins";
+@import "global";
 @import "nav";
 @import "footer";
-
-/*
-  Global
-*/
-body {
-  font-size: 18px;
-  background-color: #F7F9F9;
-}
-a {
-  text-decoration: none;
-}
+@import "keyframes";
 
 /*
   Main
@@ -49,6 +41,9 @@ a {
   }
 }
 
+/*
+  Button
+*/
 .btn {
   font-size: 1.5em;
   display: block;
@@ -56,8 +51,44 @@ a {
   margin: 6em auto;
   background-color: $nav-color;
   color: $color;
+  border: transparent;
   padding: 1em;
   border-radius: 24px;
+  &:hover {
+    background-color: rgba($nav-color, 0);
+    color: rgba($color, 0);
+    & .spinner {
+      display: block;
+    }
+
+  }
 }
 
-
+.spinner {
+  display: none;
+  width: 100%;
+  text-align: center;
+  & > span {
+    width: 18px;
+    height: 18px;
+    background-color: $nav-color;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: spinner 1.4s infinite ease-in-out both;
+    -moz-animation: spinner 1.4s infinite ease-in-out both;
+    -o-animation: spinner 1.4s infinite ease-in-out both;
+    animation: spinner 1.4s infinite ease-in-out both;
+  }
+  span:last-child {
+    -webkit-animation-delay: 0.32s;
+    -moz-animation-delay: 0.32s;
+    -o-animation-delay: 0.32s;
+    animation-delay: 0.32s;
+  }
+  span:nth-child(2n) {
+    -webkit-animation-delay: 0.16s;
+    -moz-animation-delay: 0.16s;
+    -o-animation-delay: 0.16s;
+    animation-delay: 0.16s;
+  }
+}
