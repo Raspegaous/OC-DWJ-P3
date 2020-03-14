@@ -1,9 +1,16 @@
-@mixin compatibility ($selector, $property, $value) {
-  -wekbit-#{$selector}: #{$property}(#{$value});
-  -moz-#{$selector}: #{$property}(#{$value});
-  -ms-#{$selector}: #{$property}(#{$value});
-  -o-#{$selector}: #{$property}(#{$value});
-  #{$selector}: #{$property}(#{$value});
+@mixin transform ($property, $value) {
+  -wekbit-transform: #{$property}(#{$value});
+  -moz-transform: #{$property}(#{$value});
+  -ms-transform: #{$property}(#{$value});
+  -o-transform: #{$property}(#{$value});
+  transform: #{$property}(#{$value});
+}
+@mixin transition ($type, $time) {
+  -webkit-transition: $type $time;
+  -moz-transition: $type $time;
+  -ms-transition: $type $time;
+  -o-transition: $type $time;
+  transition: $type $time;
 }
 
 @mixin keyframes ($name) {
