@@ -1,0 +1,32 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "nav";
+@import "footer";
+@import "keyframes";
+@import "extends";
+
+/*
+  Menu 2
+*/
+.main { @extend %main; }
+.section {
+  background-color: #fff5fe;
+  @extend %menu;
+  .title {
+    @include linear-gradient(to right, $menu2-entry, $menu2-dish, $menu2-dessert);
+    @extend %menu-title;
+  }
+  .entry { color: $menu2-entry; }
+  .dish { color: $menu2-dish; }
+  .dessert { color: $menu2-dessert; }
+  .entry, .dish, .dessert {
+    @extend %menu-section;
+    h3 { @extend %menu-h3; }
+    .detail {
+      @extend %menu-detail;
+      &-price { @extend %menu-price; }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+%main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+}
+%menu {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 2em auto 5em auto;
+  @include shadow(4px, #b8b8b8);
+}
+%menu-title {
+  margin: 1em auto 2em auto;
+}
+%menu-section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2em auto 1em auto;
+  width: 100%;
+}
+%menu-h3 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+%menu-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em 3em;
+}
+%menu-price {
+  width: 200px;
+  text-align: right;
+}

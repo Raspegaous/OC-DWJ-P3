@@ -30,7 +30,6 @@
   -moz-box-shadow: $size $size $size $size $color;
   -o-box-shadow: $size $size $size $size $color;
 }
-
 @mixin keyframes ($name) {
   @keyframes #{$name} { @content; }
   @-moz-keyframes #{$name} { @content; }
@@ -38,4 +37,11 @@
   @-o-keyframes #{$name} { @content; }
   @-ms-keyframes #{$name} { @content; }
   @-khtml-keyframes #{$name} { @content; }
+}
+@mixin linear-gradient ($direction, $color1, $color2, $color3) {
+  background: linear-gradient($direction, $color1, $color2, $color3);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

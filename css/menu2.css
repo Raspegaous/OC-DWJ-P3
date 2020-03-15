@@ -506,31 +506,74 @@ h2 {
     transform: scale(0);
   }
 }
-/*
-  Menu
-*/
-.section {
-  position: relative;
-  margin: 0 auto 8rem auto;
-  max-width: 80vw;
+.main {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
 }
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 2em auto 5em auto;
+  box-shadow: 4px 4px 4px 4px #b8b8b8;
+  -webkit-box-shadow: 4px 4px 4px 4px #b8b8b8;
+  -moz-box-shadow: 4px 4px 4px 4px #b8b8b8;
+  -o-box-shadow: 4px 4px 4px 4px #b8b8b8;
+}
+
 .section .title {
-  font-size: 1.5em;
-  margin: 2em;
+  margin: 1em auto 2em auto;
 }
-.section .img {
+
+.section .entry, .section .dish, .section .dessert {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 2em auto 1em auto;
   width: 100%;
 }
 
-/*
-  Legal
-*/
-.text-legal {
-  text-align: justify;
+.section .entry h3, .section .dish h3, .section .dessert h3 {
+  text-align: center;
+  margin-bottom: 2em;
 }
 
-/*# sourceMappingURL=menu.css.map */
+.section .entry .detail, .section .dish .detail, .section .dessert .detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em 3em;
+}
+
+.section .entry .detail-price, .section .dish .detail-price, .section .dessert .detail-price {
+  width: 200px;
+  text-align: right;
+}
+
+/*
+  Menu 2
+*/
+.section {
+  background-color: #fff5fe;
+}
+.section .title {
+  background: linear-gradient(to right, #C67412, #A56799, #6E4CCC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section .entry {
+  color: #C67412;
+}
+.section .dish {
+  color: #A56799;
+}
+.section .dessert {
+  color: #6E4CCC;
+}
+
+/*# sourceMappingURL=menu2.css.map */

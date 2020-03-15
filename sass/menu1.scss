@@ -1,0 +1,33 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "global";
+@import "nav";
+@import "footer";
+@import "keyframes";
+@import "extends";
+
+/*
+  Menu 1
+*/
+.main { @extend %main; }
+.section {
+  @extend %menu;
+  background-color: #fcdfdb;
+  .title {
+    @extend %menu-title;
+  }
+  .entry, .dish, .dessert {
+    @extend %menu-section;
+    h3 { @extend %menu-h3; }
+    .detail {
+      @extend %menu-detail;
+      &-price { @extend %menu-price; }
+    }
+  }
+  .dessert {
+    h3:last-child {
+      margin-top: 3em;
+    }
+  }
+}
