@@ -8,15 +8,14 @@
 @mixin transition ($type, $time) {
   -webkit-transition: $type $time;
   -moz-transition: $type $time;
-  -ms-transition: $type $time;
   -o-transition: $type $time;
   transition: $type $time;
 }
-@mixin animation ($animation, $time, $duration, $type) {
-  -webkit-animation: $animation $time $duration $type;
-  -moz-animation: $animation $time $duration $type;
-  -o-animation: $animation $time $duration $type;
-  animation: $animation $time $duration $type;
+@mixin animation ($animation) {
+  -webkit-animation: $animation;
+  -moz-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
 }
 @mixin animation-delay ($time) {
   -webkit-animation-delay: $time;
@@ -41,7 +40,32 @@
 @mixin linear-gradient ($direction, $color1, $color2, $color3) {
   background: linear-gradient($direction, $color1, $color2, $color3);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@mixin linear-gradients ($direction, $colors) {
+  background: linear-gradient($direction, $colors);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@mixin justify-content ($justify) {
+  justify-content: $justify;
+  -webkit-justify-content: $justify;
+}
+@mixin align-items ($align) {
+  align-items: $align;
+  -webkit-align-items: $align;
+}
+@mixin flex-direction ($direction) {
+  flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+}
+@mixin flex-wrap ($wrap) {
+  flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  -webkit-flex-wrap: $wrap;
+}
+@mixin grid-row ($row) {
+  grid-row: $row;
+  -ms-grid-row: $row;
 }

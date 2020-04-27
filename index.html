@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <script src="https://kit.fontawesome.com/462f7003cc.js" crossorigin="anonymous" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,36 +16,41 @@
     </nav>
 </header>
 
-<main class="main">
-    <aside class="menu">
-        <a href="./pages/la-note-enchantee.html">
-            <img src="./images/menus/menu-1b.png" alt="La note enchantée" class="menu--img">
+<main class="menus">
+    <article class="menu">
+        <a href="./pages/la-note-enchantee.html" class="menu__enchanted">
+            <i class="fas fa-music fa-5x menu__logo"></i>
+            <h2 class="menu__title">La note enchanté</h2>
+            <p class="menu__content">MENU</p>
         </a>
-    </aside>
-    <aside class="menu">
-        <a href="./pages/le-chic-a-la-francaise.html">
-            <img src="./images/menus/menu-2b.png" alt="Le chic à la française" class="menu--img">
+    </article>
+    <article class="menu">
+        <a href="./pages/le-chic-a-la-francaise.html" class="menu__chic">
+            <h2 class="menu__title">Le chic à la française</h2>
+            <p class="menu__content">Menu</p>
         </a>
-    </aside>
-    <aside class="menu">
-        <a href="./pages/le-delice-des-papilles.html">
-            <img src="./images/menus/menu-3b.png" alt="Le délice des papilles" class="menu--img">
+    </article>
+    <article class="menu">
+        <a href="./pages/le-delice-des-papilles.html" class="menu__delice">
+            <h2 class="menu__title">Le délice des papilles</h2>
+            <p class="menu__content">Menu</p>
         </a>
-    </aside>
-    <aside class="menu">
-        <a href="./pages/la-palette-du-gout.html">
-            <img src="./images/menus/menu-4b.png" alt="La palette du goût" class="menu--img">
+    </article>
+    <article class="menu">
+        <a href="./pages/la-palette-du-gout.html" class="menu__palette">
+            <h2 class="menu__title">La palette du goût</h2>
+            <p class="menu__content">Menu</p>
         </a>
-    </aside>
+    </article>
 </main>
 
 <button class="btn" type="button">
+    <span class="btn__text">Prochainement</span>
     <span class="spinner">
         <span class="bounce"></span>
         <span class="bounce"></span>
         <span class="bounce"></span>
     </span>
-    Prochainement
 </button>
 
 <footer class="footer">

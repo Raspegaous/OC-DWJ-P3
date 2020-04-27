@@ -11,3 +11,6 @@
   80% { @include transform(scale, 0); }
   100% { @include transform(scale, 0); }
 }
+@include keyframes(line) {
+    100% { width: 100%; }
+}

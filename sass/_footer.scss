@@ -10,14 +10,15 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: $footer-height;
   background-color: $nav-color;
+  border-top: solid 2px $border-color;
   a {
     margin: 0 1rem;
     color: $color;
     font-weight: bold;
     &:hover {
-      @include animation(wiggle, 0.4s, 2, ease-in-out);
+      @include animation(wiggle 0.4s 1 ease-in-out);
     }
   }
 }

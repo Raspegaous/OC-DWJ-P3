@@ -3,7 +3,9 @@
 */
 .spinner {
   display: none;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  //width: 100%;
   text-align: center;
   & > span {
     width: 18px;
@@ -11,7 +13,7 @@
     background-color: $nav-color;
     border-radius: 50%;
     display: inline-block;
-    @include animation(spinner, 1.4s, infinite, ease-in-out both);
+    @include animation(spinner 1.4s infinite ease-in-out both);
   }
   span:last-child {
     @include animation-delay(0.32s);

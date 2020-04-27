@@ -8,7 +8,7 @@
 * Validation W3C CSS
 * Utilisation de @media et/ou feuilles de style dédidées
 * Pas de CSS inline
-* Compatible Chrome, Safarie, Firefox etc ..
+* Compatible Chrome, Safari, Firefox etc ..
 ### Livrable
 * Page accueil avec logo entreprise + les 4 menus + section __prochainement__ - __Mentions légales__ - __Contactez-nous__
 * 4 pages contenant le menu de chaque resto, suite au clic sur le menu

@@ -1,14 +1,66 @@
 /*
   Variables
 */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Devonshire&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+$breakpoint-tablet: 950px;
+$breakpoint-screen: 1160px;
+
+$nav-height: 10vh;
+$footer-height: 8vh;
+
 $nav-color: #579C87;
 $color: #FDCB46;
-$menu2-entry: #C67412;
-$menu2-dish: #A56799;
-$menu2-dessert: #6E4CCC;
-$menu3-entry: #0228DD;
-$menu3-dish: #0670F3;
-$menu3-dessert: #229DF9;
-$menu4-entry: #489B40;
-$menu4-dish: #97DE6A;
-$menu4-dessert: #BEFF7F;
+$border-color: #A1C181;
+
+$menu: (
+        name: "demo",
+        background: #FF0000,
+        font-family: ('Arial', sans-serif),
+        colors: (#FF0001, #FF0002, #FF0003),
+        color: #FF0001,
+        font-size: 18px
+)!default;
+
+$menu1 : (
+        name: "enchanted",
+        background: #fcdfdb,
+        font-family: ('Devonshire', cursive),
+        colors: (#c14c5b, #F37566, #ff986c),
+        color: inherit,
+        font-size: 16px
+);
+$menu2: (
+        name: "chic",
+        background: #fcdfdb,
+        font-family: ('Croissant One', cursive),
+        colors: (#C67412, #A56799, #6E4CCC),
+        color: #C67412,
+        font-size: 12px
+);
+$menu3: (
+        name: "delice",
+        background: #f9f9f9,
+        font-family: ('Dancing Script', cursive),
+        colors: (#0228DD, #0670F3, #229DF9),
+        color: #229DF9,
+        font-size: 16px
+);
+$menu4: (
+        name: "palette",
+        background: #FDFFFD,
+        font-family: ('Kaushan Script', cursive),
+        colors: (#489B40, #97DE6A, #BEFF7F),
+        color: #97DE6A,
+        font-size: 14px
+);
+
+$pages: (
+        map_get($menu1, name) map_get($menu1, background) map_get($menu1, font-family) map_get($menu1, colors) map_get($menu1, color),
+        map_get($menu2, name) map_get($menu2, background) map_get($menu2, font-family) map_get($menu2, colors) map_get($menu2, color),
+        map_get($menu3, name) map_get($menu3, background) map_get($menu3, font-family) map_get($menu3, colors) map_get($menu3, color),
+        map_get($menu4, name) map_get($menu4, background) map_get($menu4, font-family) map_get($menu4, colors) map_get($menu4, color)
+);

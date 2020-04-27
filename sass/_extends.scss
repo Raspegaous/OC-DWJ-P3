@@ -24,6 +24,12 @@
 %menu-h3 {
   text-align: center;
   margin-bottom: 2em;
+  &:hover .line { @include animation(line 3s infinite alternate linear); }
+}
+%line {
+  height: 6px;
+  margin: -2em 2em 2em;
+  width: 0;
 }
 %menu-detail {
   display: flex;

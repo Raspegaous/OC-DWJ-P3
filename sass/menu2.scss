@@ -1,32 +1,24 @@
-@import "reset";
-@import "variables";
+@use "variables";
+@use 'menu' with (
+  $menu: variables.$menu2
+);
 @import "mixins";
-@import "global";
-@import "nav";
-@import "footer";
-@import "keyframes";
-@import "extends";
 
-/*
-  Menu 2
-*/
-.main { @extend %main; }
-.section {
-  background-color: #fff5fe;
-  @extend %menu;
-  .title {
-    @include linear-gradient(to right, $menu2-entry, $menu2-dish, $menu2-dessert);
-    @extend %menu-title;
-  }
-  .entry { color: $menu2-entry; }
-  .dish { color: $menu2-dish; }
-  .dessert { color: $menu2-dessert; }
-  .entry, .dish, .dessert {
-    @extend %menu-section;
-    h3 { @extend %menu-h3; }
-    .detail {
-      @extend %menu-detail;
-      &-price { @extend %menu-price; }
+.main {
+  .menu {
+    &__title {
+      @include linear-gradients(to right, map_get(variables.$menu2, colors));
+    }
+    &__entry {
+      color: nth(map_get(variables.$menu2, colors), 1);
+    }
+    &__dish {
+      color: nth(map_get(variables.$menu2, colors), 2);
+    }
+    &__dessert {
+      color: nth(map_get(variables.$menu2, colors), 3);
     }
   }
 }
+
+// Todo: modifier et coloriser les lignes des articles

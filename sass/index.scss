@@ -7,55 +7,112 @@
 @import "footer";
 @import "spinner";
 
-/*
-  Main
-*/
-.main {
-  margin: 1em auto;
-  max-width: 80vw;
-  display: flex;
-  align-content: space-between;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  .menu {
-    max-width: 600px;
-    margin: 2em auto;
-    @include shadow(4px, #b8b8b8);
-    @include transition(all, 0.4s);
-    overflow: hidden;
-    &--img {
-      width: 100%;
-      height: 100%;
-      @include transition(all, 0.4s);
-      &:hover {
+.menus {
+    display: flex;
+    @include flex-direction(column);
+    @include align-items(center);
+    width: 80vw;
+    margin: 2rem auto;
+
+    .menu {
         width: 100%;
-        opacity: 0.4;
-        @include transform(scale, 1.3);
-      }
-    }
+        height: 100vh;
+        margin: 2rem;
+        overflow: hidden;
+        @include shadow(4px, #b8b8b8);
+        &__logo {
+            height: 1.5em;
+            @include linear-gradients(to right, map_get($menu1, colors));
+        }
+        // Boucle sur chaque page
+        @each $name, $background-color, $font-family, $colors, $color in $pages
+        {
+            &__#{$name} {
+                font-family: $font-family;
+                display: flex;
+                @include flex-direction(column);
+                @include align-items(center);
+                @include justify-content(center);
+                height: 100%;
+                width: 100%;
+                background: $background-color;
+                @include transition(all, 0.4s);
 
-  }
+                & .menu__title {
+                    font-size: 2.5rem;
+                    text-align: center;
+                    @if $name != "enchanted"
+                    {
+                        @include linear-gradients(to right, $colors);
+                    }
+                }
+
+                & .menu__content {
+                    margin-top: 3rem;
+                    font-size: 5rem;
+                    color: $color;
+                }
+
+                &:hover {
+                    opacity: 0.4;
+                    @include transform(scale, 1.3);
+                }
+            }
+        }
+    }
 }
 
-/*
-  Button
-*/
 .btn {
-  font-size: 1.5em;
-  display: block;
-  text-align: center;
-  margin: 6em auto;
-  background-color: $nav-color;
-  color: $color;
-  border: transparent;
-  padding: 1em;
-  border-radius: 24px;
-  &:hover {
-    background-color: rgba($nav-color, 0);
-    color: rgba($color, 0);
-    & .spinner {
-      display: block;
+    display: flex;
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+    width: 100%;
+    margin-bottom: calc(#{$footer-height} + 3rem);
+    font-size: 1.5rem;
+    border: transparent;
+    &__text {
+        background-color: $nav-color;
+        padding: 1rem;
+        border-radius: 10px;
+        color: $color;
+        @include transition(all, .3s);
     }
-
-  }
+    &:hover {
+        .btn__text {
+            background-color: rgba($nav-color, 0);
+            color: $nav-color;
+        }
+        .spinner {
+            display: block;
+        }
+    }
 }
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-screen) {
+    .menus {
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        width: 100%;
+        .menu {
+            width: 40%;
+            min-width: 400px;
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint-screen) {
+    .menus {
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        @include flex-direction(row);
+        .menu {
+            width: 40%;
+        }
+    }
+}
+
+// TODO: Voir le petit décalage a gauche lor de l'animation "Prochainement ..."
+
+
