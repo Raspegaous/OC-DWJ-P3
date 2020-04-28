@@ -1,8 +1,8 @@
-@use "variables";
-@use 'menu' with (
+@use "../helpers/variables";
+@use '../layout/menu' with (
   $menu: variables.$menu2
 );
-@import "mixins";
+@import "../helpers/mixins";
 
 .main {
   .menu {
@@ -16,6 +16,7 @@
       color: nth(map_get(variables.$menu2, colors), 2);
     }
     &__dessert {
+      word-break: break-word;
       color: nth(map_get(variables.$menu2, colors), 3);
     }
   }

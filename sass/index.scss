@@ -1,11 +1,12 @@
-@import "reset";
-@import "variables";
-@import "mixins";
-@import "keyframes";
-@import "global";
-@import "nav";
-@import "footer";
-@import "spinner";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/keyframes";
+@import "base/reset";
+@import "base/global";
+@import "components/spinner";
+@import "layout/nav";
+@import "layout/footer";
+
 
 .menus {
     display: flex;
@@ -65,18 +66,19 @@
 .btn {
     display: flex;
     @include flex-direction(row);
-    @include justify-content(center);
+    @include justify-content(space-between);
     @include align-items(center);
-    width: 100%;
-    margin-bottom: calc(#{$footer-height} + 3rem);
+    margin: 0 auto calc(#{$footer-height} + 3rem);
+    width: auto;
     font-size: 1.5rem;
     border: transparent;
+    background-color: transparent;
     &__text {
         background-color: $nav-color;
-        padding: 1rem;
+        padding: 1em;
         border-radius: 10px;
         color: $color;
-        @include transition(all, .3s);
+        @include transition(all, .4s);
     }
     &:hover {
         .btn__text {
@@ -84,7 +86,9 @@
             color: $nav-color;
         }
         .spinner {
-            display: block;
+            & > span {
+                background-color: $nav-color;
+            }
         }
     }
 }

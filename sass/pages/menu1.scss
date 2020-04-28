@@ -1,5 +1,5 @@
-@use "variables";
-@use 'menu' with (
+@use "../helpers/variables";
+@use '../layout/menu' with (
     $menu: variables.$menu1
 );
 

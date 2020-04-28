@@ -2,15 +2,14 @@
   Spinner
 */
 .spinner {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  //width: 100%;
+  display: block;
+  @include justify-content(center);
+  @include align-items(center);
+  margin-left: 1em;
   text-align: center;
   & > span {
     width: 18px;
     height: 18px;
-    background-color: $nav-color;
     border-radius: 50%;
     display: inline-block;
     @include animation(spinner 1.4s infinite ease-in-out both);
