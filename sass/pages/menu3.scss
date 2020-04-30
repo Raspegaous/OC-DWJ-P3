@@ -1,16 +1,16 @@
 @use "../helpers/variables";
 @use '../layout/menu' with (
-  $menu: variables.$menu3
+$menu: variables.$menu3
 );
 
 @import "../helpers/mixins";
 
 .main {
-  .menu {
-    &__title {
-      @include linear-gradients(to right, map_get(variables.$menu3, colors));
+    .menu {
+        &__title {
+            @include linear-gradients(to right, map_get(variables.$menu3, colors));
+        }
     }
-  }
 }
 
 // Todo: modifier et coloriser les lignes des articles

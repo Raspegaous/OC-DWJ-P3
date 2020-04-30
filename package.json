@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/github.com/raspegaous#readme",
   "dependencies": {
-    "sass": "^1.26.3"
+    "sass": "^1.26.3",
+    "sass-lint": "^1.13.1"
   }
 }

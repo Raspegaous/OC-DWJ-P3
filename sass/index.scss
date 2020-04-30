@@ -25,7 +25,7 @@
             height: 1.5em;
             @include linear-gradients(to right, map_get($menu1, colors));
         }
-        // Boucle sur chaque page
+        // Boucle sur chaque menu
         @each $name, $background-color, $font-family, $colors, $color in $pages
         {
             &__#{$name} {
@@ -63,36 +63,6 @@
     }
 }
 
-.btn {
-    display: flex;
-    @include flex-direction(row);
-    @include justify-content(space-between);
-    @include align-items(center);
-    margin: 0 auto calc(#{$footer-height} + 3rem);
-    width: auto;
-    font-size: 1.5rem;
-    border: transparent;
-    background-color: transparent;
-    &__text {
-        background-color: $nav-color;
-        padding: 1em;
-        border-radius: 10px;
-        color: $color;
-        @include transition(all, .4s);
-    }
-    &:hover {
-        .btn__text {
-            background-color: rgba($nav-color, 0);
-            color: $nav-color;
-        }
-        .spinner {
-            & > span {
-                background-color: $nav-color;
-            }
-        }
-    }
-}
-
 @media screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-screen) {
     .menus {
         @include flex-wrap(wrap);
@@ -116,7 +86,5 @@
         }
     }
 }
-
-// TODO: Voir le petit décalage a gauche lor de l'animation "Prochainement ..."
 
 

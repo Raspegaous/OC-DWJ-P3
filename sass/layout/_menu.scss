@@ -52,7 +52,7 @@
                 @include align-items(center);
                 margin-bottom: 2em;
                 display: grid;
-                grid-template-columns: 30% 40% 30%;
+                grid-template-columns: 37% 25% 37%;
                 font-size: 1.8em;
                 &:hover::after {
                     content: '';
@@ -61,7 +61,7 @@
                     height: 3px;
                     @include grid-row(2);
                     grid-column: 3 / 2;
-                    margin-bottom: -1em;
+                    margin-bottom: -0.1em;
                     @include animation(line 3s infinite linear)
                 }
             }

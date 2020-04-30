@@ -1,15 +1,18 @@
 @use "../helpers/variables";
 @use '../layout/menu' with (
-  $menu: variables.$menu4
+$menu: variables.$menu4
 );
 @import "../helpers/mixins.scss";
 
 .main {
-  .menu {
-    &__title {
-      @include linear-gradients(to right, map_get(variables.$menu4, colors));
+    .menu {
+        &__title {
+            @include linear-gradients(to right, map_get(variables.$menu4, colors));
+        }
+        svg {
+            color: red;
+        }
     }
-  }
 }
 
 // Todo: modifier et coloriser les lignes des articles

@@ -295,13 +295,6 @@ a {
     -o-transform: scale(1);
     transform: scale(1);
   }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
   100% {
     -wekbit-transform: scale(0);
     -moz-transform: scale(0);
@@ -324,13 +317,6 @@ a {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-  }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
   }
   100% {
     -wekbit-transform: scale(0);
@@ -355,13 +341,6 @@ a {
     -o-transform: scale(1);
     transform: scale(1);
   }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
   100% {
     -wekbit-transform: scale(0);
     -moz-transform: scale(0);
@@ -384,13 +363,6 @@ a {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-  }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
   }
   100% {
     -wekbit-transform: scale(0);
@@ -415,13 +387,6 @@ a {
     -o-transform: scale(1);
     transform: scale(1);
   }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-  }
   100% {
     -wekbit-transform: scale(0);
     -moz-transform: scale(0);
@@ -444,13 +409,6 @@ a {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-  }
-  80% {
-    -wekbit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
   }
   100% {
     -wekbit-transform: scale(0);
@@ -602,7 +560,7 @@ a {
   -webkit-align-items: center;
   margin-bottom: 2em;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 37% 25% 37%;
   font-size: 1.8em;
 }
 .main .menu__entry h3:hover::after, .main .menu__dish h3:hover::after, .main .menu__dessert h3:hover::after {
@@ -613,7 +571,7 @@ a {
   grid-row: 2;
   -ms-grid-row: 2;
   grid-column: 3/2;
-  margin-bottom: -1em;
+  margin-bottom: -0.1em;
   -webkit-animation: line 3s infinite linear;
   -moz-animation: line 3s infinite linear;
   -o-animation: line 3s infinite linear;
@@ -670,6 +628,9 @@ a {
   background: linear-gradient(to right, #489B40, #97DE6A, #BEFF7F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.main .menu svg {
+  color: red;
 }
 
 /*# sourceMappingURL=menu4.css.map */

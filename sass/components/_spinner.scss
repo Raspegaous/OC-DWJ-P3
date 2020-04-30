@@ -2,22 +2,35 @@
   Spinner
 */
 .spinner {
-  display: block;
-  @include justify-content(center);
-  @include align-items(center);
-  margin-left: 1em;
-  text-align: center;
-  & > span {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: inline-block;
-    @include animation(spinner 1.4s infinite ease-in-out both);
-  }
-  span:last-child {
-    @include animation-delay(0.32s);
-  }
-  span:nth-child(2n) {
-    @include animation-delay(0.16s);
-  }
+    display: flex;
+    @include justify-content(center);
+    @include align-items(center);
+    margin: 0 auto calc(#{$footer-height} + 3rem);
+    &__title {
+        &__btn {
+            display: flex;
+            @include align-items(center);
+            @include justify-content(center);
+            font-size: 1.5em;
+            padding: 0.4em;
+            border-radius: 8px;
+            color: $color;
+            background-color: $nav-color;
+            border: none;
+            & > span {
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background-color: $color;
+                margin-left: 0.5em;
+                @include animation(spinner 1.4s infinite ease-in-out both);
+            }
+            & span:nth-child(2) {
+                @include animation-delay(0.16s);
+            }
+            & span:last-child {
+                @include animation-delay(0.32s);
+            }
+        }
+    }
 }
