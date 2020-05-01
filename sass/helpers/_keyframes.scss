@@ -1,15 +1,35 @@
 @include keyframes(wiggle) {
-  0% { @include transform(rotate, 10deg); }
-  25% { @include transform(rotate, -10deg); }
-  50% { @include transform(rotate, 20deg); }
-  75% { @include transform(rotate, -5deg); }
-  100% { @include transform(rotate, 0deg); }
+    0% {
+        @include transform(rotate, 10deg);
+    }
+    25% {
+        @include transform(rotate, -10deg);
+    }
+    50% {
+        @include transform(rotate, 20deg);
+    }
+    75% {
+        @include transform(rotate, -5deg);
+    }
+    100% {
+        @include transform(rotate, 0deg);
+    }
 }
+
 @include keyframes(spinner) {
-  0% { @include transform(scale, 0); }
-  40% { @include transform(scale, 1.0); }
-  100% { @include transform(scale, 0); }
+    0% {
+        @include transform(scale, 0);
+    }
+    40% {
+        @include transform(scale, 1.0);
+    }
+    100% {
+        @include transform(scale, 0);
+    }
 }
+
 @include keyframes(line) {
-    100% { width: 100%; }
+    100% {
+        width: 80%;
+    }
 }

@@ -367,32 +367,32 @@
 }
 @keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-moz-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-webkit-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-o-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-ms-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-khtml-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 /*

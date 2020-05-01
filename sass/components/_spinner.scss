@@ -6,6 +6,7 @@
     @include justify-content(center);
     @include align-items(center);
     margin: 0 auto calc(#{$footer-height} + 3rem);
+
     &__title {
         &__btn {
             display: flex;
@@ -17,6 +18,7 @@
             color: $color;
             background-color: $nav-color;
             border: none;
+
             & > span {
                 width: 9px;
                 height: 9px;
@@ -25,9 +27,11 @@
                 margin-left: 0.5em;
                 @include animation(spinner 1.4s infinite ease-in-out both);
             }
+
             & span:nth-child(2) {
                 @include animation-delay(0.16s);
             }
+
             & span:last-child {
                 @include animation-delay(0.32s);
             }

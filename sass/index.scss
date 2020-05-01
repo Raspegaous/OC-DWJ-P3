@@ -21,13 +21,14 @@
         margin: 2rem;
         overflow: hidden;
         @include shadow(4px, #b8b8b8);
+
         &__logo {
             height: 1.5em;
             @include linear-gradients(to right, map_get($menu1, colors));
         }
+
         // Boucle sur chaque menu
-        @each $name, $background-color, $font-family, $colors, $color in $pages
-        {
+        @each $name, $background-color, $font-family, $colors, $color in $pages {
             &__#{$name} {
                 font-family: $font-family;
                 display: flex;
@@ -42,8 +43,7 @@
                 & .menu__title {
                     font-size: 2.5rem;
                     text-align: center;
-                    @if $name != "enchanted"
-                    {
+                    @if $name != "enchanted" {
                         @include linear-gradients(to right, $colors);
                     }
                 }
@@ -69,6 +69,7 @@
         @include justify-content(space-between);
         @include flex-direction(row);
         width: 100%;
+
         .menu {
             width: 40%;
             min-width: 400px;
@@ -81,6 +82,7 @@
         @include flex-wrap(wrap);
         @include justify-content(space-between);
         @include flex-direction(row);
+
         .menu {
             width: 40%;
         }

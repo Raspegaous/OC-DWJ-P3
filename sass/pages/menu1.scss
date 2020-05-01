@@ -1,6 +1,6 @@
 @use "../helpers/variables";
 @use '../layout/menu' with (
-    $menu: variables.$menu1
+$menu: variables.$menu1
 );
 
 .main {

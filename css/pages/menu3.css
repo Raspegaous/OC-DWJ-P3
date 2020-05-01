@@ -420,32 +420,32 @@ a {
 }
 @keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-moz-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-webkit-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-o-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-ms-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-khtml-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 /*
@@ -508,7 +508,7 @@ a {
   font-size: 16px;
 }
 .main i {
-  background: linear-gradient(to right, #0228DD, #0670F3, #229DF9);
+  background: linear-gradient(to right, #0014e4, #0074f8, #00a3fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -560,18 +560,22 @@ a {
   -webkit-align-items: center;
   margin-bottom: 2em;
   display: grid;
-  grid-template-columns: 37% 25% 37%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   font-size: 1.8em;
+}
+.main .menu__entry h3 .menu__line:last-child, .main .menu__dish h3 .menu__line:last-child, .main .menu__dessert h3 .menu__line:last-child {
+  transform: rotate(180deg);
 }
 .main .menu__entry h3:hover::after, .main .menu__dish h3:hover::after, .main .menu__dessert h3:hover::after {
   content: "";
-  background: linear-gradient(to right, #0228DD, #0670F3, #229DF9);
+  background: linear-gradient(to right, #0014e4, #0074f8, #00a3fc);
   width: 0;
   height: 3px;
   grid-row: 2;
   -ms-grid-row: 2;
   grid-column: 3/2;
-  margin-bottom: -0.1em;
+  margin-left: 1em;
+  margin-bottom: -0.25em;
   -webkit-animation: line 3s infinite linear;
   -moz-animation: line 3s infinite linear;
   -o-animation: line 3s infinite linear;
@@ -625,7 +629,7 @@ a {
   }
 }
 .main .menu__title {
-  background: linear-gradient(to right, #0228DD, #0670F3, #229DF9);
+  background: linear-gradient(to right, #0014e4, #0074f8, #00a3fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

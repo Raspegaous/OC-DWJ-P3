@@ -367,32 +367,32 @@
 }
 @keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-moz-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-webkit-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-o-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-ms-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 @-khtml-keyframes line {
   100% {
-    width: 100%;
+    width: 80%;
   }
 }
 /*
@@ -658,14 +658,14 @@ a {
 .menus .menu__delice .menu__title {
   font-size: 2.5rem;
   text-align: center;
-  background: linear-gradient(to right, #0228DD, #0670F3, #229DF9);
+  background: linear-gradient(to right, #0014e4, #0074f8, #00a3fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .menus .menu__delice .menu__content {
   margin-top: 3rem;
   font-size: 5rem;
-  color: #229DF9;
+  color: #00a3fc;
 }
 .menus .menu__delice:hover {
   opacity: 0.4;

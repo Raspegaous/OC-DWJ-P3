@@ -2,18 +2,18 @@
   Nav
 */
 .header {
-  display: flex;
-  @include justify-content(center);
-  @include align-items(center);
-  width: 100%;
-  //height: $nav-height;
-  background-color: $nav-color;
-  border-bottom: solid 2px $border-color;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  & .title {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: $color;
-  }
+    display: flex;
+    @include justify-content(center);
+    @include align-items(center);
+    width: 100%;
+    background-color: $nav-color;
+    border-bottom: solid 2px $border-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    & .title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: $color;
+    }
 }

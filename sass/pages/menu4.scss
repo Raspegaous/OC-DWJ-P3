@@ -9,10 +9,12 @@ $menu: variables.$menu4
         &__title {
             @include linear-gradients(to right, map_get(variables.$menu4, colors));
         }
+
         svg {
-            color: red;
+            fill: red;
+            width: 100%;
+            height: 10px;
+            border: solid 1px red;
         }
     }
 }
-
-// Todo: modifier et coloriser les lignes des articles

@@ -2,23 +2,25 @@
   Footer
 */
 .footer {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: $footer-height;
-  background-color: $nav-color;
-  border-top: solid 2px $border-color;
-  a {
-    margin: 0 1rem;
-    color: $color;
-    font-weight: bold;
-    &:hover {
-      @include animation(wiggle 0.4s 1 ease-in-out);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: $footer-height;
+    background-color: $nav-color;
+    border-top: solid 2px $border-color;
+
+    a {
+        margin: 0 1rem;
+        color: $color;
+        font-weight: bold;
+
+        &:hover {
+            @include animation(wiggle 0.4s 1 ease-in-out);
+        }
     }
-  }
 }

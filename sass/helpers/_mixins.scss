@@ -1,71 +1,95 @@
-@mixin transform ($property, $value) {
-  -wekbit-transform: #{$property}(#{$value});
-  -moz-transform: #{$property}(#{$value});
-  -ms-transform: #{$property}(#{$value});
-  -o-transform: #{$property}(#{$value});
-  transform: #{$property}(#{$value});
+@mixin transform($property, $value) {
+    -wekbit-transform: #{$property}(#{$value});
+    -moz-transform: #{$property}(#{$value});
+    -ms-transform: #{$property}(#{$value});
+    -o-transform: #{$property}(#{$value});
+    transform: #{$property}(#{$value});
 }
-@mixin transition ($type, $time) {
-  -webkit-transition: $type $time;
-  -moz-transition: $type $time;
-  -o-transition: $type $time;
-  transition: $type $time;
+
+@mixin transition($type, $time) {
+    -webkit-transition: $type $time;
+    -moz-transition: $type $time;
+    -o-transition: $type $time;
+    transition: $type $time;
 }
-@mixin animation ($animation) {
-  -webkit-animation: $animation;
-  -moz-animation: $animation;
-  -o-animation: $animation;
-  animation: $animation;
+
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+    -moz-animation: $animation;
+    -o-animation: $animation;
+    animation: $animation;
 }
-@mixin animation-delay ($time) {
-  -webkit-animation-delay: $time;
-  -moz-animation-delay: $time;
-  -o-animation-delay: $time;
-  animation-delay: $time;
+
+@mixin animation-delay($time) {
+    -webkit-animation-delay: $time;
+    -moz-animation-delay: $time;
+    -o-animation-delay: $time;
+    animation-delay: $time;
 }
-@mixin shadow ($size, $color) {
-  box-shadow: $size $size $size $size $color;
-  -webkit-box-shadow: $size $size $size $size $color;
-  -moz-box-shadow: $size $size $size $size $color;
-  -o-box-shadow: $size $size $size $size $color;
+
+@mixin shadow($size, $color) {
+    box-shadow: $size $size $size $size $color;
+    -webkit-box-shadow: $size $size $size $size $color;
+    -moz-box-shadow: $size $size $size $size $color;
+    -o-box-shadow: $size $size $size $size $color;
 }
-@mixin keyframes ($name) {
-  @keyframes #{$name} { @content; }
-  @-moz-keyframes #{$name} { @content; }
-  @-webkit-keyframes #{$name} { @content; }
-  @-o-keyframes #{$name} { @content; }
-  @-ms-keyframes #{$name} { @content; }
-  @-khtml-keyframes #{$name} { @content; }
+
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-o-keyframes #{$name} {
+        @content;
+    }
+    @-ms-keyframes #{$name} {
+        @content;
+    }
+    @-khtml-keyframes #{$name} {
+        @content;
+    }
 }
-@mixin linear-gradient ($direction, $color1, $color2, $color3) {
-  background: linear-gradient($direction, $color1, $color2, $color3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+@mixin linear-gradient($direction, $color1, $color2, $color3) {
+    background: linear-gradient($direction, $color1, $color2, $color3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-@mixin linear-gradients ($direction, $colors) {
-  background: linear-gradient($direction, $colors);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+@mixin linear-gradients($direction, $colors) {
+    background: linear-gradient($direction, $colors);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-@mixin justify-content ($justify) {
-  justify-content: $justify;
-  -webkit-justify-content: $justify;
+
+@mixin justify-content($justify) {
+    justify-content: $justify;
+    -webkit-justify-content: $justify;
 }
-@mixin align-items ($align) {
-  align-items: $align;
-  -webkit-align-items: $align;
+
+@mixin align-items($align) {
+    align-items: $align;
+    -webkit-align-items: $align;
 }
-@mixin flex-direction ($direction) {
-  flex-direction: $direction;
-  -webkit-flex-direction: $direction;
-  -ms-flex-direction: $direction;
+
+@mixin flex-direction($direction) {
+    flex-direction: $direction;
+    -webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
 }
-@mixin flex-wrap ($wrap) {
-  flex-wrap: $wrap;
-  -ms-flex-wrap: $wrap;
-  -webkit-flex-wrap: $wrap;
+
+@mixin flex-wrap($wrap) {
+    flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -webkit-flex-wrap: $wrap;
 }
-@mixin grid-row ($row) {
-  grid-row: $row;
-  -ms-grid-row: $row;
+
+@mixin grid-row($row) {
+    grid-row: $row;
+    -ms-grid-row: $row;
 }

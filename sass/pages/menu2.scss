@@ -9,17 +9,17 @@ $menu: variables.$menu2
         &__title {
             @include linear-gradients(to right, map_get(variables.$menu2, colors));
         }
+
         &__entry {
             color: nth(map_get(variables.$menu2, colors), 1);
         }
+
         &__dish {
             color: nth(map_get(variables.$menu2, colors), 2);
         }
+
         &__dessert {
-            word-break: break-word;
             color: nth(map_get(variables.$menu2, colors), 3);
         }
     }
 }
-
-// Todo: modifier et coloriser les lignes des articles
